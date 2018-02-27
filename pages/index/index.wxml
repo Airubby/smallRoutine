@@ -1,13 +1,201 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="index_top">
+  <view class='index_logo'>
+    <image src="/images/logo.png"></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="index_phone">
+    咨询电话：0991-2801444
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='content'>
+  <form action="" method="get">
+    <view class="form_group">
+      <input type="text" class="form_input" name="search" placeholder="输入景点，线路名称" />
+      <button class='form_btn'>搜索</button>
+    </view>
+  </form>
+  <view class='nav-entry'>
+    <view class='rowbox'>
+      <view class='col col-33'>
+        <view class='a'><view class='em'>周边游</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>跟团游</view></view>
+        <view class='a'><view>包车游</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>拼车游</view></view>
+        <view class='a'><view>秒杀</view></view>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-33'>
+        <view class='a'><view class='em'>喀纳斯</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>跟团游</view></view>
+        <view class='a'><view>拼车游</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>摄影游</view></view>
+        <view class='a'><view>自由行</view></view>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-33'>
+        <view class='a'><view class='em'>伊犁</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>跟团游</view></view>
+        <view class='a'><view>包车游</view></view>
+      </view>
+      <view class='col col-33'>
+        <view class='a line'><view>火车游</view></view>
+        <view class='a'><view>摄影游</view></view>
+      </view>
+    </view>
+  </view>
+  <view class='subNav-entry'>
+    <view class='rowbox'>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>可可托海</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>喀纳斯</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>赛湖</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>夏特</view></view>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>喀拉峻</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>巴音布鲁克</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>那拉提</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>吐鲁番</view></view>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>天池</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>喀什</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>库车</view></view>
+      </view>
+      <view class='col col-25'>
+        <view class='a'><view class='em'>禾木</view></view>
+      </view>
+    </view>
+  </view>
+  <view class='index_listbox'>
+    <view class="index_title">
+      <view class='h2'>特价游</view>
+    </view>
+    <view class='index_list'>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='index_listbox'>
+    <view class="index_title">
+      <view class='h2'>大美新疆专列</view>
+    </view>
+    <view class='index_list'>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='index_listbox'>
+    <view class="index_title">
+      <view class='h2'>个性拼车</view>
+    </view>
+    <view class='index_list'>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+      <view class='li'>
+        <view class="img">
+            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+        </view>
+        <view class="text">
+            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
+            <view class='p'>出发城市：乌鲁木齐</view>
+            <view class='p'>行程天数：1天</view>
+            <view class='span'>￥320元<text class='em'>起</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='sales-box'>
+    <view class='h2'>特价请购</view>
+    <view></view>
   </view>
 </view>
