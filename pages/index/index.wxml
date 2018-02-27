@@ -11,7 +11,7 @@
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image"/>
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
     </swiper-item>
   </block>
 </swiper>
@@ -19,7 +19,7 @@
   <form action="" method="get">
     <view class="form_group">
       <input type="text" class="form_input" name="search" placeholder="输入景点，线路名称" />
-      <button class='form_btn'>搜索</button>
+      <input class='form_btn' value='搜索' />
     </view>
   </form>
   <view class='nav-entry'>
@@ -196,6 +196,31 @@
   </view>
   <view class='sales-box'>
     <view class='h2'>特价请购</view>
-    <view></view>
+    <view class='sales-box-con'>
+      <view class='sales-rowbox'>
+        <view class='col-50'>
+          <view><image src="/images/index1.jpg" mode="widthFix"></image></view>
+        </view>
+        <view class='col-50'>
+          <view><image src="/images/index2.jpg" mode="widthFix"></image></view>
+          <view><image src="/images/index3.jpg" mode="widthFix"></image></view>
+        </view>
+      </view>
+      <view class='sales-rowbox'>
+        <view class='col-50'>
+          <view><image src="/images/index4.jpg" mode="widthFix"></image></view>
+        </view>
+        <view class='col-50'>
+          <view><image src="/images/index5.jpg" mode="widthFix"></image></view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>
+
+<view class='footer'>
+  新疆国旅假期国际旅行社有限公司版权所有
+</view>
+
+
+

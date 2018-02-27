@@ -8,3 +8,12 @@ view text{
   padding: 0 10px;
   overflow: hidden;
 }
+.footer{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: center;
+  background: #1A89B9;
+  color:#fff;
+}
