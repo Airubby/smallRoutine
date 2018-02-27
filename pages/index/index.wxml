@@ -19,7 +19,7 @@
   <form action="" method="get">
     <view class="form_group">
       <input type="text" class="form_input" name="search" placeholder="输入景点，线路名称" />
-      <input class='form_btn' value='搜索' />
+      <input class='form_btn' value='搜索' bindtap="bindViewTap" />
     </view>
   </form>
   <view class='nav-entry'>

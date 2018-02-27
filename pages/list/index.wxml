@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="index_top">
+  <view class='index_logo'>
+    <image src="/images/logo.png"></image>
+  </view>
+  <view class="index_phone">
+    咨询电话：0991-2801444
+  </view>
+</view>
+
+<view class='content'>
+  <view class='public-list-sort-top'>
+    <view class='dl'>
+        <view class='dt'>主题活动：</view>
+        <view class='dd'>
+          <navigator class="all" url="">全部</navigator>
+          <navigator url="">蜜月</navigator>
+          <navigator url="">亲子</navigator>
+          <navigator url="">摄影</navigator>
+          <navigator url="">度假</navigator>
+          <navigator url="">夕阳红</navigator>
+          <navigator url="">自由行</navigator>
+          <navigator url="">臻品系列</navigator>
+          <navigator url="">定制游</navigator>
+        </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>线路属性：</view>
+      <view class='dd'>
+      <navigator class="all" url="">全部</navigator>
+      <navigator url="">跟团游</navigator>
+      <navigator url="">深度游</navigator>
+      <navigator url="">特色游</navigator>
+      <navigator url="">纯玩游</navigator>
+      <navigator url="">摄影游</navigator>
+      <navigator url="">自助游</navigator>
+      <navigator url="">丝路游</navigator>
+      <navigator url="">拼车游</navigator>
+      <navigator url="">包车游</navigator>
+      <navigator url="">火车游</navigator>
+      <navigator url="">自驾游</navigator>
+      </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>按时间：</view>
+      <view class='dd'>
+        <navigator class="all" url="">全部</navigator>
+        <navigator url="">1-2天</navigator>
+        <navigator url="">3-4天</navigator>
+        <navigator url="">5-6天</navigator>
+        <navigator url="">7-8天</navigator>
+        <navigator url="">9-10天</navigator>
+        <navigator url="">11-15天</navigator>
+        <navigator url="">15天以上</navigator>
+      </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>按价格：</view>
+      <view class='dd'>
+        <navigator class="all" url="">全部</navigator>
+        <navigator url="">500元以下</navigator>
+        <navigator url="">500-1000元</navigator>
+        <navigator url="">1000-2000元</navigator>
+        <navigator url="">2000-5000元</navigator>
+        <navigator url="">5000-10000元</navigator>
+        <navigator url="">10000元以上</navigator>
+      </view>
+    </view>
+  </view>
+  <view class='public-list-con'>
+    <view class='public-list-conbox'>
+123213
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  新疆国旅假期国际旅行社有限公司版权所有
+</view>
+
+
+

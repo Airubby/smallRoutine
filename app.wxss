@@ -3,6 +3,31 @@ view text{
   margin: 0;
   padding: 0;
 }
+.index_top {
+    width: 100%;
+    height: 45px;
+    padding: 10px 0;
+    background: #11A9EC;
+}
+.index_logo{
+  float: left;
+  margin-left: 10px;
+}
+.index_logo image{
+  width: 100px;
+  height: 45px;
+}
+.index_phone{
+  float: right;
+  height: 45px;
+  font-size: 12px;
+  margin-right: 10px;
+  color: #fff;
+  line-height: 70px;
+}
+.slide-image{
+  width: 100%;
+}
 .content{
   background: #F2F2F2;
   padding: 0 10px;

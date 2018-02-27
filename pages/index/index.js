@@ -34,7 +34,20 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../list/index'
+    })
+  },
+  onLoad:function(){
+    wx.request({
+      url: 'https://api.xbtour.com/ad?mark=mobile.index.line',
+      success: function (res) {
+        console.log(res)
+      }
+    })
   }
-
   
 })
