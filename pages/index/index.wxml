@@ -107,31 +107,21 @@
       </view>
     </view>
   </view>
-  <view class='index_listbox'>
+
+  <view class='index_listbox' wx:for="{{indexListbox}}">
     <view class="index_title">
-      <view class='h2'>特价游</view>
+      <view class='h2'>{{item.name}}</view>
     </view>
     <view class='index_list'>
-      <view class='li'>
+      <view class='li' wx:for="{{item.lines}}" wx:for-item="inItem">
         <view class="img">
-            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
+            <image src="http://www.xbtour.com/{{inItem.thumbnail}}" alt="" />
         </view>
         <view class="text">
-            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
-            <view class='p'>出发城市：乌鲁木齐</view>
-            <view class='p'>行程天数：1天</view>
-            <view class='span'>￥320元<text class='em'>起</text></view>
-        </view>
-      </view>
-      <view class='li'>
-        <view class="img">
-            <image src="http://m.xbtour.com/thumb/uploads/line/201706/1497837827_16/100_80.jpg" alt="" />
-        </view>
-        <view class="text">
-            <view class='h2'>【纯玩商务团】天山明珠天山天池1日游</view>
-            <view class='p'>出发城市：乌鲁木齐</view>
-            <view class='p'>行程天数：1天</view>
-            <view class='span'>￥320元<text class='em'>起</text></view>
+            <view class='h2'>{{inItem.title}}</view>
+            <view class='p'>出发城市：{{inItem.address_start}}</view>
+            <view class='p'>行程天数：{{inItem.day}}天</view>
+            <view class='span'>￥{{inItem.price}}元<text class='em'>起</text></view>
         </view>
       </view>
     </view>
@@ -194,6 +184,7 @@
       </view>
     </view>
   </view>
+
   <view class='sales-box'>
     <view class='h2'>特价请购</view>
     <view class='sales-box-con'>
