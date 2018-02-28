@@ -14,7 +14,7 @@ Page({
     interval: 5000,
     duration: 1000,
 
-    indexListbox: [{ name: "特价游", lines: [{ title: '天池一日游', address_start: '成都', day: 2, price: 320, thumbnail:'images/ad_img2.jpg'}]}],
+    indexListbox: [],
 
   },
   //事件处理函数
@@ -50,9 +50,9 @@ Page({
       url: 'https://api.xbtour.com/ad?mark=mobile.index.line',
       success: function (res) {
         console.log(res)
-        // _this.setData({
-        //   indexListbox : res.data
-        // })
+        _this.setData({
+          indexListbox : res.data
+        })
       }
     })
     
