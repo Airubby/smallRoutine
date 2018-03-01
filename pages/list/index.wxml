@@ -67,9 +67,46 @@
       </view>
     </view>
   </view>
+  <view class='puclic-list-sort-center'>
+    <view class='li'>
+      <navigator>综合</navigator>
+    </view>
+    <view class='li'>
+      <navigator>价格</navigator>
+    </view>
+    <view class='li'>
+      <navigator>时间</navigator>
+    </view>
+  </view>
   <view class='public-list-con'>
-    <view class='public-list-conbox'>
-123213
+    <view class='public-list-conbox panel-body'>
+        <view class='panel-body-li'>
+          <navigator url='../content/index?id={{inItem.id}}'>
+            <view class='media-heading'>
+              <view class='fl'>物流方式第三方来决定是否落实地方就是代理费</view>
+              <view style='color: #f60;float:left;'>23元/人</view>
+            </view>
+            <view class='media-body'>讲的是塑料袋副教授雷锋</view>
+          </navigator>
+        </view>
+        <view class='panel-body-li'>
+          <navigator url='../content/index?id={{inItem.id}}'>
+            <view class='media-heading'>
+              <view class='fl'>物流方式第三方来决定是否落实地方就是代理费</view>
+              <view style='color: #f60;float:left;'>23元/人</view>
+            </view>
+            <view class='media-body'>讲的是塑料袋副教授雷锋</view>
+          </navigator>
+        </view>
+        <view class='panel-body-li'>
+          <navigator url='../content/index?id={{inItem.id}}'>
+            <view class='media-heading'>
+              <view class='fl'>物流方式第三方来决定是否落实地方就是代理费</view>
+              <view style='color: #f60;float:left;'>23元/人</view>
+            </view>
+            <view class='media-body'>讲的是塑料袋副教授雷锋</view>
+          </navigator>
+        </view>
     </view>
   </view>
 </view>

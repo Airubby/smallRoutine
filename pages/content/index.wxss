@@ -86,13 +86,4 @@
     background-color: #fcf8e3;
     border-color: #faebcc;
 }
-.panel-body .media-heading{
-    margin-bottom: 5px;
-    display: block;
-    overflow: hidden;
-}
-.panel-body .media-body {
-    font-size: 12px;
-    color: #666;
-    display: block;
-}
+

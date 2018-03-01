@@ -1,3 +1,6 @@
+.content{
+  background: #fff;
+}
 .public-list-sort-top {
     border: 1px solid #e6e6e6;
     overflow: hidden;
@@ -25,6 +28,21 @@
     background: #2b98db;
     color: #fff;
     padding: 0 5px;
+}
+.puclic-list-sort-center {
+    border: 1px solid #e2e2e2;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.puclic-list-sort-center .li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    border-right: 1px solid #e2e2e2;
+    padding: 0 20px;
+    display: block;
+    color: #000;
+    font-size: 14px;
 }
 
 .public-list-conbox{

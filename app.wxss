@@ -48,3 +48,24 @@ view text{
 .fl{
   float: left;
 }
+.panel-body .media-heading{
+    margin-bottom: 5px;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+}
+.panel-body .media-body {
+    font-size: 12px;
+    color: #666;
+    display: block;
+}
+.panel-body .panel-body-li{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+.panel-body .panel-body-li:last-of-type{
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

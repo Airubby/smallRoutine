@@ -4,17 +4,17 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
+    
     indicatorDots: false,
     autoplay: true,
     interval: 5000,
     duration: 1000,
 
+    indexSlide:[],
+    indexLinks:[],
+    indexKeyword:[],
     indexListbox: [],
+    indexBig:[],
 
   },
   //事件处理函数
@@ -46,15 +46,73 @@ Page({
   },
   onLoad:function(){
     var _this=this;
+    //幻灯片
     wx.request({
-      url: 'https://api.xbtour.com/ad?mark=mobile.index.line',
+      url: 'https://api.xbtour.com/ad',
+      data:{
+        mark:'index.top.slide'
+      },
+      success: function (res) {
+        //console.log(res)
+        _this.setData({
+          indexSlide: res.data
+        })
+      }
+    })
+    //推荐链接
+    wx.request({
+      url: 'https://api.xbtour.com/ad',
+      data: {
+        mark: 'mobile.index.links'
+      },
       success: function (res) {
         console.log(res)
+        _this.setData({
+          indexLinks: res.data
+        })
+      }
+    })
+    //推荐关键词
+    wx.request({
+      url: 'https://api.xbtour.com/ad',
+      data: {
+        mark: 'mobile.index.keywords'
+      },
+      success: function (res) {
+        //console.log(res)
+        _this.setData({
+          indexKeyword: res.data
+        })
+      }
+    })
+    //线路列表
+    wx.request({
+      url: 'https://api.xbtour.com/ad',
+      data: {
+        mark: 'mobile.index.line'
+      },
+      success: function (res) {
+        //console.log(res)
         _this.setData({
           indexListbox : res.data
         })
       }
     })
+    //底部大图展示
+    wx.request({
+      url: 'https://api.xbtour.com/ad',
+      data: {
+        mark: 'mobile.index.big'
+      },
+      success: function (res) {
+        //console.log(res)
+        _this.setData({
+          indexBig: res.data
+        })
+      }
+    })
+    
+    
     
   }
   
