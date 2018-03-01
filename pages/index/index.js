@@ -66,9 +66,9 @@ Page({
         mark: 'mobile.index.links'
       },
       success: function (res) {
-        console.log(res)
+        //console.log(res.data[0])
         _this.setData({
-          indexLinks: res.data
+          indexLinks: res.data[0]
         })
       }
     })
@@ -79,9 +79,9 @@ Page({
         mark: 'mobile.index.keywords'
       },
       success: function (res) {
-        //console.log(res)
+        //console.log(res.data[0])
         _this.setData({
-          indexKeyword: res.data
+          indexKeyword: res.data[0]
         })
       }
     })
@@ -105,9 +105,9 @@ Page({
         mark: 'mobile.index.big'
       },
       success: function (res) {
-        //console.log(res)
+        console.log(res.data[0])
         _this.setData({
-          indexBig: res.data
+          indexBig: res.data[0]
         })
       }
     })

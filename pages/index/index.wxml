@@ -25,87 +25,132 @@
     </view>
   </form>
   <view class='nav-entry'>
+
     <view class='rowbox'>
       <view class='col col-33'>
-        <view class='a'><view class='em'>周边游</view></view>
+        <navigator class='a' url='../list/index?{{indexLinks.links[0].url}}'>
+          <view class='em'>{{indexLinks.links[0].title}}</view>
+        </navigator>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>跟团游</view></view>
-        <view class='a'><view>包车游</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[1].url}}'><view>{{indexLinks.links[1].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[2].url}}'><view>{{indexLinks.links[2].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>拼车游</view></view>
-        <view class='a'><view>秒杀</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[3].url}}'><view>{{indexLinks.links[3].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[4].url}}'><view>{{indexLinks.links[4].title}}</view></view>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-33'>
-        <view class='a'><view class='em'>喀纳斯</view></view>
+        <navigator class='a' url='../list/index?{{indexLinks.links[5].url}}'>
+          <view class='em'>{{indexLinks.links[5].title}}</view>
+        </navigator>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>跟团游</view></view>
-        <view class='a'><view>拼车游</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[6].url}}'><view>{{indexLinks.links[6].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[7].url}}'><view>{{indexLinks.links[7].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>摄影游</view></view>
-        <view class='a'><view>自由行</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[8].url}}'><view>{{indexLinks.links[8].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[9].url}}'><view>{{indexLinks.links[9].title}}</view></view>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-33'>
-        <view class='a'><view class='em'>伊犁</view></view>
+        <navigator class='a' url='../list/index?{{indexLinks.links[10].url}}'>
+          <view class='em'>{{indexLinks.links[10].title}}</view>
+        </navigator>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>跟团游</view></view>
-        <view class='a'><view>包车游</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[11].url}}'><view>{{indexLinks.links[11].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[12].url}}'><view>{{indexLinks.links[12].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <view class='a line'><view>火车游</view></view>
-        <view class='a'><view>摄影游</view></view>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[13].url}}'><view>{{indexLinks.links[13].title}}</view></navigator>
+        <view class='a' url='../list/index?{{indexLinks.links[14].url}}'><view>{{indexLinks.links[14].title}}</view></view>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-33'>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[15].url}}'><view>{{indexLinks.links[15].title}}</view></navigator>
+        <navigator class='a' url='../list/index?{{indexLinks.links[16].url}}'><view>{{indexLinks.links[16].title}}</view></navigator>
+      </view>
+      <view class='col col-33'>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[17].url}}'><view>{{indexLinks.links[17].title}}</view></navigator>
+        <navigator class='a' url='../list/index?{{indexLinks.links[18].url}}'><view>{{indexLinks.links[18].title}}</view></navigator>
+      </view>
+      <view class='col col-33'>
+        <navigator class='a line' url='../list/index?{{indexLinks.links[19].url}}'><view>{{indexLinks.links[19].title}}</view></navigator>
+        <navigator class='a' url='../list/index?{{indexLinks.links[20].url}}'><view>{{indexLinks.links[20].title}}</view></navigator>
       </view>
     </view>
   </view>
   <view class='subNav-entry'>
     <view class='rowbox'>
       <view class='col col-25'>
-        <view class='a'><view class='em'>可可托海</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[0].url}}'>
+          <view class='em'>{{indexKeyword.links[0].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>喀纳斯</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[1].url}}'>
+          <view class='em'>{{indexKeyword.links[1].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>赛湖</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[2].url}}'>
+          <view class='em'>{{indexKeyword.links[2].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>夏特</view></view>
-      </view>
-    </view>
-    <view class='rowbox'>
-      <view class='col col-25'>
-        <view class='a'><view class='em'>喀拉峻</view></view>
-      </view>
-      <view class='col col-25'>
-        <view class='a'><view class='em'>巴音布鲁克</view></view>
-      </view>
-      <view class='col col-25'>
-        <view class='a'><view class='em'>那拉提</view></view>
-      </view>
-      <view class='col col-25'>
-        <view class='a'><view class='em'>吐鲁番</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[3].url}}'>
+          <view class='em'>{{indexKeyword.links[3].title}}</view>
+        </navigator>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-25'>
-        <view class='a'><view class='em'>天池</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[4].url}}'>
+          <view class='em'>{{indexKeyword.links[4].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>喀什</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[5].url}}'>
+          <view class='em'>{{indexKeyword.links[5].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>库车</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[6].url}}'>
+          <view class='em'>{{indexKeyword.links[6].title}}</view>
+        </navigator>
       </view>
       <view class='col col-25'>
-        <view class='a'><view class='em'>禾木</view></view>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[7].url}}'>
+          <view class='em'>{{indexKeyword.links[7].title}}</view>
+        </navigator>
+      </view>
+    </view>
+    <view class='rowbox'>
+      <view class='col col-25'>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[8].url}}'>
+          <view class='em'>{{indexKeyword.links[8].title}}</view>
+        </navigator>
+      </view>
+      <view class='col col-25'>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[9].url}}'>
+          <view class='em'>{{indexKeyword.links[9].title}}</view>
+        </navigator>
+      </view>
+      <view class='col col-25'>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[10].url}}'>
+          <view class='em'>{{indexKeyword.links[10].title}}</view>
+        </navigator>
+      </view>
+      <view class='col col-25'>
+        <navigator class='a' url='../list/index?{{indexKeyword.links[11].url}}'>
+          <view class='em'>{{indexKeyword.links[11].title}}</view>
+        </navigator>
       </view>
     </view>
   </view>
@@ -134,19 +179,29 @@
     <view class='sales-box-con'>
       <view class='sales-rowbox'>
         <view class='col-50'>
-          <view><image src="/images/index1.jpg" mode="widthFix"></image></view>
+          <navigator url='../list/index?{{indexBig.images[0].url}}'>
+            <image src="http://www.xbtour.com/{{indexBig.images[0].image}}" mode="widthFix" alt="{{indexBig.images[0].title}}" />
+          </navigator>
         </view>
         <view class='col-50'>
-          <view><image src="/images/index2.jpg" mode="widthFix"></image></view>
-          <view><image src="/images/index3.jpg" mode="widthFix"></image></view>
+          <navigator url='../list/index?{{indexBig.images[1].url}}'>
+            <image src="http://www.xbtour.com/{{indexBig.images[1].image}}" mode="widthFix" alt="{{indexBig.images[1].title}}" />
+          </navigator>
+          <navigator url='../list/index?{{indexBig.images[2].url}}'>
+            <image src="http://www.xbtour.com/{{indexBig.images[2].image}}" mode="widthFix" alt="{{indexBig.images[2].title}}" />
+          </navigator>
         </view>
       </view>
       <view class='sales-rowbox'>
         <view class='col-50'>
-          <view><image src="/images/index4.jpg" mode="widthFix"></image></view>
+          <navigator url='../list/index?{{indexBig.images[3].url}}'>
+            <image src="http://www.xbtour.com/{{indexBig.images[3].image}}" mode="widthFix" alt="{{indexBig.images[3].title}}" />
+          </navigator>
         </view>
         <view class='col-50'>
-          <view><image src="/images/index5.jpg" mode="widthFix"></image></view>
+          <navigator url='../list/index?{{indexBig.images[4].url}}'>
+            <image src="http://www.xbtour.com/{{indexBig.images[4].image}}" mode="widthFix" alt="{{indexBig.images[4].title}}" />
+          </navigator>
         </view>
       </view>
     </view>
