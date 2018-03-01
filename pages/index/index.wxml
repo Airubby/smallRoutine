@@ -115,7 +115,7 @@
     <view class='index_list'>
       <navigator class='li' wx:for="{{item.lines}}" wx:key="inItem" wx:for-item="inItem" url='../content/index?id={{inItem.id}}'>
         <view class="img">
-            <image src="http://www.xbtour.com/{{inItem.thumbnail}}" alt="" />
+            <image src="http://www.xbtour.com/{{inItem.thumbnail}}" alt="{{inItem.title}}" />
         </view>
         <view class="text">
             <view class='h2'>{{inItem.title}}</view>

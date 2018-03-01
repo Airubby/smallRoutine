@@ -7,9 +7,77 @@
     咨询电话：0991-2801444
   </view>
 </view>
-
+<view class='img'><image src="http://www.xbtour.com/{{content.thumbnail}}" alt="{{content.title}}" mode="widthFix"/></view>
 <view class='content'>
-  内容页
+  <view class='content_list'>
+    <view class='li'>
+      <view class='title'>线路标题:</view>
+      <view>{{content.title}}</view>
+    </view>
+    <view class='li'>
+      <view class='title'>线路价格：</view>
+      <view>￥{{content.market_price}}元</view>
+    </view>
+    <view class='li'>
+      <view class='title'>出发城市：</view>
+      <view>{{content.address_start}}</view>
+    </view>
+    <view class='li'>
+      <view class='title'>行程天数：</view>
+      <view>{{content.day}}天</view>
+    </view>
+    <view class='li'>
+      <view class='title'>服务热线：</view>
+      <view>{{content.phone}}</view>
+    </view>
+    <a type="button" class="order" href="http://m.xbtour.com/order/799">立即预定</a>
+  </view>
+  <view class='contentbox'>
+    <view class='panelbox'>
+      <view class="panel-heading" style="background: #09c;border-color: #09c;">
+        <view class="panel-title">行程特色</view>
+      </view>
+      <view class="panel-body">
+        {{content.about}}
+      </view>
+    </view>
+    <view class='panelbox'>
+      <view class="panel-heading" style="background: #F18787;border-color: #F18787;">
+        <view class="panel-title">行程安排</view>
+      </view>
+      <view class="panel-body">
+        <view class="jumbotron" wx:for="{{content.days}}" wx:key="content.id">
+          <view class="alert alert-danger"><view class='span'>第{{item.day}}天</view>{{item.title}}</view>
+          <view>{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='panelbox'>
+      <view class="panel-heading" style="background: #87F19E;border-color: #87F19E;">
+        <view class="panel-title">费用说明</view>
+      </view>
+      <view class='panel-body'>
+        <view class="alert alert-success">费用包含</view>
+        <view class='mb20'>{{content.items_free}}</view>
+        <view class="alert alert-warning">费用不包含</view>
+        <view class='mb20'>{{content.items_toll}}</view>
+      </view>
+    </view>
+    <view class='panelbox'>
+      <view class="panel-heading" style="background: #87A8F1;border-color: #87A8F1;">猜你喜欢</view>
+      <view class='panel-body'>
+        <view wx:for="{{content.my_keywords}}" wx:key="item.id" wx:for-item="item">
+          <navigator wx:for="{{item.lines}}" wx:key="inItem.id" wx:for-item="inItem" url='../content/index?id={{inItem.id}}'>
+            <view class='media-heading'>
+              <view class='fl'>{{inItem.title}}</view>
+              <view style='color: #f60;float:left;'>{{inItem.price}}元/人</view>
+            </view>
+            <view class='media-body'>{{inItem.about}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
 
 <view class='footer'>

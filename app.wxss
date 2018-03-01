@@ -42,3 +42,9 @@ view text{
   background: #1A89B9;
   color:#fff;
 }
+.mb20{
+  margin-bottom: 20px;
+}
+.fl{
+  float: left;
+}

@@ -1,47 +1,98 @@
-.public-list-sort-top {
-    border: 1px solid #e6e6e6;
-    overflow: hidden;
+.img {
+  font-size: 0;
+  margin-bottom: 10px;
+}
+.img image{
+  width: 100%;
+}
+.content{
+  background: #fff;
+}
+.content_list .li{
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.content_list .li view{
+  font-size: 14px;
+  color: #444;
+}
+.content_list .li .title{
+  float: left;
+}
+.content_list .order{
+  display: block;
+  width: 100%;
+  color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    padding: 6px 0;
     margin: 15px 0;
-    padding: 16px 10px 8px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    text-align: center;
 }
-.public-list-sort-top .dl {
-    margin-bottom: 8px;
-    overflow: hidden;
+.panelbox{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-.public-list-sort-top .dt {
+.panel-heading{
+  padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 14px;
+}
+.panel-body{
+  padding: 10px;
+  font-size: 12px;
+}
+.jumbotron{
+  color: inherit;
+    background-color: #eee;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 10px;
+}
+.panel-body .alert {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.panel-body .alert-danger{
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
+}
+.jumbotron .alert .span {
+    margin-right: 10px;
     float: left;
-    color: #000;
-    font-weight: normal;
-    font-size: 14px;
 }
-.public-list-sort-top .dd navigator {
-    margin: 0 5px;
-    font-size: 14px;
-    display:block;
-    float:left;
-    color: #333;
+.panel-body .alert-success{
+  color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
 }
-.public-list-sort-top .dd .all {
-    background: #2b98db;
-    color: #fff;
-    padding: 0 5px;
+.panel-body .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
 }
-
-.public-list-conbox{
-      padding-bottom: 15px;
-    border-bottom: 1px solid #e2e2e2;
+.panel-body .media-heading{
+    margin-bottom: 5px;
+    display: block;
     overflow: hidden;
-    zoom: 1;
-    color: #65696c;
-    font-weight: normal;
 }
-
-
-
-
-
-
-
-
-
-
+.panel-body .media-body {
+    font-size: 12px;
+    color: #666;
+    display: block;
+}

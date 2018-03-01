@@ -8,11 +8,10 @@ Page({
   },
   onLoad: function (options) {
     var _this = this;
-    console.log(options)
     wx.request({
-      url: 'https://api.xbtour.com/tour/'+options.id,
+      url: 'https://api.xbtour.com/tour/799',
       success: function (res) {
-        console.log(res)
+        console.log(res.data)
         _this.setData({
           content: res.data
         })
