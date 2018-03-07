@@ -17,14 +17,14 @@
     font-weight: normal;
     font-size: 14px;
 }
-.public-list-sort-top .dd navigator {
+.public-list-sort-top .dd view {
     margin: 0 5px;
     font-size: 14px;
     display:block;
     float:left;
     color: #333;
 }
-.public-list-sort-top .dd .all {
+.public-list-sort-top .dd .active {
     background: #2b98db;
     color: #fff;
     padding: 0 5px;
@@ -54,7 +54,23 @@
     font-weight: normal;
 }
 
-
+.pages{
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.pages view{
+  display: inline-block;
+  padding: 3px 5px;
+  border: 1px solid #2b98db;
+  margin: 0 5px;
+  color: #2b98db;
+  cursor: pointer;
+}
+.pages view.nopage{
+  border-color: #999;
+  color: #999;
+}
 
 
 

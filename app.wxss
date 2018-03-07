@@ -58,6 +58,8 @@ view text{
     font-size: 12px;
     color: #666;
     display: block;
+    max-height: 80px;
+    overflow: hidden;
 }
 .panel-body .panel-body-li{
     padding-bottom: 15px;

@@ -69,8 +69,7 @@
         <view wx:for="{{content.my_keywords}}" wx:key="item.id" wx:for-item="item" class='panel-body-li'>
           <navigator wx:for="{{item.lines}}" wx:key="inItem.id" wx:for-item="inItem" url='../content/index?id={{inItem.id}}'>
             <view class='media-heading'>
-              <view class='fl'>{{inItem.title}}</view>
-              <view style='color: #f60;float:left;'>{{inItem.price}}元/人</view>
+              <view class='fl'>{{inItem.title}}<view style='color: #f60;display:inline;'>{{inItem.price}}元/人</view></view>
             </view>
             <view class='media-body'>{{inItem.about}}</view>
           </navigator>

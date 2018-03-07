@@ -15,6 +15,7 @@ Page({
     indexKeyword:[],
     indexListbox: [],
     indexBig:[],
+    info_input:''
 
   },
   //事件处理函数
@@ -39,9 +40,15 @@ Page({
     })
   },
   //事件处理函数
+  infoInput:function(e){
+    console.log(e)
+    this.setData({
+      info_input: e.detail.value
+    })
+  },
   bindViewTap: function () {
     wx.navigateTo({
-      url: '../list/index'
+      url: '../list/tours?search='+this.data.info_input
     })
   },
   onLoad:function(){
@@ -66,7 +73,7 @@ Page({
         mark: 'mobile.index.links'
       },
       success: function (res) {
-        //console.log(res.data[0])
+        console.log(res.data[0])
         _this.setData({
           indexLinks: res.data[0]
         })
@@ -105,7 +112,7 @@ Page({
         mark: 'mobile.index.big'
       },
       success: function (res) {
-        console.log(res.data[0])
+        //console.log(res.data[0])
         _this.setData({
           indexBig: res.data[0]
         })

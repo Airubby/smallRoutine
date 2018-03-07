@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="index_top">
+  <view class='index_logo'>
+    <image src="/images/logo.png"></image>
+  </view>
+  <view class="index_phone">
+    咨询电话：0991-2801444
+  </view>
+</view>
+
+<view class='content'>
+  <view class='public-list-sort-top'>
+    <view class='dl'>
+        <view class='dt'>主题活动：</view>
+        <view class='dd'>
+          <view class="{{theme=='' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value=''>全部</view>
+          <view class="{{theme=='1' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='1'>蜜月</view>
+          <view class="{{theme=='2' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='2'>亲子</view>
+          <view class="{{theme=='3' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='3'>摄影</view>
+          <view class="{{theme=='4' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='4'>度假</view>
+          <view class="{{theme=='5' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='5'>夕阳红</view>
+          <view class="{{theme=='6' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='6'>自由行</view>
+          <view class="{{theme=='8' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='8'>臻品系列</view>
+          <view class="{{theme=='9' ? 'active':''}}" bindtap="bindViewTap" data-type='theme' data-value='9'>定制游</view>
+        </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>线路属性：</view>
+      <view class='dd'>
+      <view class="{{attribute=='' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value=''>全部</view>
+      <view class="{{attribute=='1' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='1'>跟团游</view>
+      <view class="{{attribute=='2' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='2'>深度游</view>
+      <view class="{{attribute=='3' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='3'>特色游</view>
+      <view class="{{attribute=='4' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='4'>纯玩游</view>
+      <view class="{{attribute=='5' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='5'>摄影游</view>
+      <view class="{{attribute=='6' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='6'>自助游</view>
+      <view class="{{attribute=='7' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='7'>丝路游</view>
+      <view class="{{attribute=='8' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='8'>拼车游</view>
+      <view class="{{attribute=='9' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='9'>包车游</view>
+      <view class="{{attribute=='10' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='10'>火车游</view>
+      <view class="{{attribute=='11' ? 'active':''}}" bindtap="bindViewTap" data-type='attribute' data-value='11'>自驾游</view>
+      </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>按时间：</view>
+      <view class='dd'>
+        <view class="{{day=='' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value=''>全部</view>
+        <view class="{{day=='1-2' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='1-2'>1-2天</view>
+        <view class="{{day=='3-4' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='3-4'>3-4天</view>
+        <view class="{{day=='5-6' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='5-6'>5-6天</view>
+        <view class="{{day=='7-8' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='7-8'>7-8天</view>
+        <view class="{{day=='9-10' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='9-10'>9-10天</view>
+        <view class="{{day=='11-15' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='11-15'>11-15天</view>
+        <view class="{{day=='15' ? 'active':''}}" bindtap="bindViewTap" data-type='day' data-value='15'>15天以上</view>
+      </view>
+    </view>
+    <view class='dl'>
+      <view class='dt'>按价格：</view>
+      <view class='dd'>
+        <view class="{{price=='' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value=''>全部</view>
+        <view class="{{price=='499' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='499'>500元以下</view>
+        <view class="{{price=='500-1000' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='500-1000'>500-1000元</view>
+        <view class="{{price=='1000-2000' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='1000-2000'>1000-2000元</view>
+        <view class="{{price=='2000-5000' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='2000-5000'>2000-5000元</view>
+        <view class="{{price=='5000-10000' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='5000-10000'>5000-10000元</view>
+        <view class="{{price=='10000' ? 'active':''}}" bindtap="bindViewTap" data-type='price' data-value='10000'>10000元以上</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='puclic-list-sort-center'>
+    <view class='li'>
+      <view>综合</view>
+    </view>
+    <view class='li'>
+      <view>价格</view>
+    </view>
+    <view class='li'>
+      <view>时间</view>
+    </view>
+  </view> -->
+  <view class='public-list-con'>
+    <view class='public-list-conbox panel-body'>
+        <view class='panel-body-li'  wx:for="{{listData}}" wx:key="item.id">
+          <navigator url='../content/index?id={{item.id}}'>
+            <view class='media-heading'>
+              <view>{{item.title}}<view style='color: #f60;display:inline;'>{{item.price}}元/人</view></view>
+            </view>
+            <view class='media-body'>
+              {{item.about}}
+            </view>
+          </navigator>
+        </view>
+    </view>
+    <view class='pages'>
+      <view class="prev {{prev_page==null ? 'nopage':''}}{{prev_page=='' ? 'nopage':''}}" bindtap="bindPage" data-type='prev'>上一页</view>
+      <view class="next {{next_page==null ? 'nopage':''}}{{next_page=='' ? 'nopage':''}}"  bindtap="bindPage" data-type='next'>下一页</view>
+    </view>
+  </view>
+
+</view>
+
+<view class='footer'>
+  新疆国旅假期国际旅行社有限公司版权所有
+</view>
+
+
+

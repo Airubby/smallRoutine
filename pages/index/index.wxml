@@ -20,7 +20,7 @@
 <view class='content'>
   <form action="" method="get">
     <view class="form_group">
-      <input type="text" class="form_input" name="search" placeholder="输入景点，线路名称" />
+      <input type="text" class="form_input" bindinput ="infoInput" name="search" placeholder="输入景点，线路名称" />
       <input class='form_btn' value='搜索' bindtap="bindViewTap" />
     </view>
   </form>
@@ -28,127 +28,127 @@
 
     <view class='rowbox'>
       <view class='col col-33'>
-        <navigator class='a' url='../list/index?{{indexLinks.links[0].url}}'>
+        <navigator class='a' url='../list/{{indexLinks.links[0].url}}'>
           <view class='em'>{{indexLinks.links[0].title}}</view>
         </navigator>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[1].url}}'><view>{{indexLinks.links[1].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[2].url}}'><view>{{indexLinks.links[2].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[1].url}}'><view>{{indexLinks.links[1].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[2].url}}'><view>{{indexLinks.links[2].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[3].url}}'><view>{{indexLinks.links[3].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[4].url}}'><view>{{indexLinks.links[4].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[3].url}}'><view>{{indexLinks.links[3].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[4].url}}'><view>{{indexLinks.links[4].title}}</view></view>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-33'>
-        <navigator class='a' url='../list/index?{{indexLinks.links[5].url}}'>
+        <navigator class='a' url='../list/{{indexLinks.links[5].url}}'>
           <view class='em'>{{indexLinks.links[5].title}}</view>
         </navigator>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[6].url}}'><view>{{indexLinks.links[6].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[7].url}}'><view>{{indexLinks.links[7].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[6].url}}'><view>{{indexLinks.links[6].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[7].url}}'><view>{{indexLinks.links[7].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[8].url}}'><view>{{indexLinks.links[8].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[9].url}}'><view>{{indexLinks.links[9].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[8].url}}'><view>{{indexLinks.links[8].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[9].url}}'><view>{{indexLinks.links[9].title}}</view></view>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-33'>
-        <navigator class='a' url='../list/index?{{indexLinks.links[10].url}}'>
+        <navigator class='a' url='../list/{{indexLinks.links[10].url}}'>
           <view class='em'>{{indexLinks.links[10].title}}</view>
         </navigator>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[11].url}}'><view>{{indexLinks.links[11].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[12].url}}'><view>{{indexLinks.links[12].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[11].url}}'><view>{{indexLinks.links[11].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[12].url}}'><view>{{indexLinks.links[12].title}}</view></view>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[13].url}}'><view>{{indexLinks.links[13].title}}</view></navigator>
-        <view class='a' url='../list/index?{{indexLinks.links[14].url}}'><view>{{indexLinks.links[14].title}}</view></view>
+        <navigator class='a line' url='../list/{{indexLinks.links[13].url}}'><view>{{indexLinks.links[13].title}}</view></navigator>
+        <view class='a' url='../list/{{indexLinks.links[14].url}}'><view>{{indexLinks.links[14].title}}</view></view>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[15].url}}'><view>{{indexLinks.links[15].title}}</view></navigator>
-        <navigator class='a' url='../list/index?{{indexLinks.links[16].url}}'><view>{{indexLinks.links[16].title}}</view></navigator>
+        <navigator class='a line' url='../list/{{indexLinks.links[15].url}}'><view>{{indexLinks.links[15].title}}</view></navigator>
+        <navigator class='a' url='../list/{{indexLinks.links[16].url}}'><view>{{indexLinks.links[16].title}}</view></navigator>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[17].url}}'><view>{{indexLinks.links[17].title}}</view></navigator>
-        <navigator class='a' url='../list/index?{{indexLinks.links[18].url}}'><view>{{indexLinks.links[18].title}}</view></navigator>
+        <navigator class='a line' url='../list/{{indexLinks.links[17].url}}'><view>{{indexLinks.links[17].title}}</view></navigator>
+        <navigator class='a' url='../list/{{indexLinks.links[18].url}}'><view>{{indexLinks.links[18].title}}</view></navigator>
       </view>
       <view class='col col-33'>
-        <navigator class='a line' url='../list/index?{{indexLinks.links[19].url}}'><view>{{indexLinks.links[19].title}}</view></navigator>
-        <navigator class='a' url='../list/index?{{indexLinks.links[20].url}}'><view>{{indexLinks.links[20].title}}</view></navigator>
+        <navigator class='a line' url='../list/{{indexLinks.links[19].url}}'><view>{{indexLinks.links[19].title}}</view></navigator>
+        <navigator class='a' url='../list/{{indexLinks.links[20].url}}'><view>{{indexLinks.links[20].title}}</view></navigator>
       </view>
     </view>
   </view>
   <view class='subNav-entry'>
     <view class='rowbox'>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[0].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[0].url}}'>
           <view class='em'>{{indexKeyword.links[0].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[1].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[1].url}}'>
           <view class='em'>{{indexKeyword.links[1].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[2].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[2].url}}'>
           <view class='em'>{{indexKeyword.links[2].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[3].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[3].url}}'>
           <view class='em'>{{indexKeyword.links[3].title}}</view>
         </navigator>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[4].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[4].url}}'>
           <view class='em'>{{indexKeyword.links[4].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[5].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[5].url}}'>
           <view class='em'>{{indexKeyword.links[5].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[6].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[6].url}}'>
           <view class='em'>{{indexKeyword.links[6].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[7].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[7].url}}'>
           <view class='em'>{{indexKeyword.links[7].title}}</view>
         </navigator>
       </view>
     </view>
     <view class='rowbox'>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[8].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[8].url}}'>
           <view class='em'>{{indexKeyword.links[8].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[9].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[9].url}}'>
           <view class='em'>{{indexKeyword.links[9].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[10].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[10].url}}'>
           <view class='em'>{{indexKeyword.links[10].title}}</view>
         </navigator>
       </view>
       <view class='col col-25'>
-        <navigator class='a' url='../list/index?{{indexKeyword.links[11].url}}'>
+        <navigator class='a' url='../list/{{indexKeyword.links[11].url}}'>
           <view class='em'>{{indexKeyword.links[11].title}}</view>
         </navigator>
       </view>
@@ -179,27 +179,27 @@
     <view class='sales-box-con'>
       <view class='sales-rowbox'>
         <view class='col-50'>
-          <navigator url='../list/index?{{indexBig.images[0].url}}'>
+          <navigator url='../list/{{indexBig.images[0].url}}'>
             <image src="http://www.xbtour.com/{{indexBig.images[0].image}}" mode="widthFix" alt="{{indexBig.images[0].title}}" />
           </navigator>
         </view>
         <view class='col-50'>
-          <navigator url='../list/index?{{indexBig.images[1].url}}'>
+          <navigator url='../list/{{indexBig.images[1].url}}'>
             <image src="http://www.xbtour.com/{{indexBig.images[1].image}}" mode="widthFix" alt="{{indexBig.images[1].title}}" />
           </navigator>
-          <navigator url='../list/index?{{indexBig.images[2].url}}'>
+          <navigator url='../list/{{indexBig.images[2].url}}'>
             <image src="http://www.xbtour.com/{{indexBig.images[2].image}}" mode="widthFix" alt="{{indexBig.images[2].title}}" />
           </navigator>
         </view>
       </view>
       <view class='sales-rowbox'>
         <view class='col-50'>
-          <navigator url='../list/index?{{indexBig.images[3].url}}'>
+          <navigator url='../list/{{indexBig.images[3].url}}'>
             <image src="http://www.xbtour.com/{{indexBig.images[3].image}}" mode="widthFix" alt="{{indexBig.images[3].title}}" />
           </navigator>
         </view>
         <view class='col-50'>
-          <navigator url='../list/index?{{indexBig.images[4].url}}'>
+          <navigator url='../list/{{indexBig.images[4].url}}'>
             <image src="http://www.xbtour.com/{{indexBig.images[4].image}}" mode="widthFix" alt="{{indexBig.images[4].title}}" />
           </navigator>
         </view>
