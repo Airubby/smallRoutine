@@ -5,7 +5,8 @@ const app = getApp()
 Page({
   data: {
     content:'',
-    phone:''
+    phone:'',
+    id:''
   },
   //打电话
   calling: function () {
@@ -20,13 +21,15 @@ Page({
     })
   },  
   onLoad: function (options) {
+    console.log(options)
     var _this = this;
     wx.request({
-      url: 'https://api.xbtour.com/tour/799',
+      url: 'https://api.xbtour.com/tour/'+options.id,
       success: function (res) {
         console.log(res.data)
         _this.setData({
-          content: res.data
+          content: res.data,
+          id:options.id
         })
       }
     })

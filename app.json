@@ -4,7 +4,7 @@
     "pages/list/tours",
     
     "pages/content/index",
-    
+    "pages/order/index",
     "pages/logs/logs"
     
   ],

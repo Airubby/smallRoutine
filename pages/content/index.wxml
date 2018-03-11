@@ -30,7 +30,7 @@
       <view class='title'>服务热线：</view>
       <view>{{content.phone}}</view>
     </view>
-    <a type="button" class="order" href="http://m.xbtour.com/order/799">立即预定</a>
+    <navigator type="button" class="order" url="../order/index?id={{id}}">立即预定</navigator>
   </view>
   <view class='contentbox'>
     <view class='panelbox'>
