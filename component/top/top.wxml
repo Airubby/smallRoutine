@@ -1,0 +1,10 @@
+<template name="topInfo">
+  <view class="index_top">
+    <view class='index_logo'>
+      <image src="/images/logo.png"></image>
+    </view>
+    <view class="index_phone">
+      咨询电话：<view style='display:inline;' bindtap="calling">{{phone}}</view> 
+    </view>
+  </view>
+</template>

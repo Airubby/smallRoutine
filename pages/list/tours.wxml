@@ -4,7 +4,7 @@
     <image src="/images/logo.png"></image>
   </view>
   <view class="index_phone">
-    咨询电话：0991-2801444
+    咨询电话：<view style='display:inline;' bindtap="calling">{{phone}}</view> 
   </view>
 </view>
 

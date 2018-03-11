@@ -14,7 +14,7 @@ view text{
   margin-left: 10px;
 }
 .index_logo image{
-  width: 100px;
+  width: 55px;
   height: 45px;
 }
 .index_phone{
